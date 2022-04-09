@@ -57,17 +57,6 @@ public class FuncionarioController {
     }
   }
 
-  // GET /api/funcionarios/:id -> listar funcionário dado um id
-  @GetMapping("/funcionarios/{id}")
-  public ResponseEntity<Funcionario> getFuncionarioById(@PathVariable("id") long id) {
-    Optional<Funcionario> data = funcRep.findById(id);
-    if (data.isPresent()) {
-      return new ResponseEntity<>(data.get(), HttpStatus.OK);
-    } else {
-      return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-    }
-  }
-
   // DEL /api/funcionarios/:id -> remover funcionário dado um id
   @DeleteMapping("/funcionarios/{id}")
   public ResponseEntity<HttpStatus> deleteFuncionario(@PathVariable("id") long id) {
