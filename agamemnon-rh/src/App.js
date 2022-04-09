@@ -13,7 +13,7 @@ class App extends Component {
         <BrowserRouter>
           <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
             <div className="container">
-              <Link to={"/list"} className="navbar-brand">
+              <Link to={"/"} className="navbar-brand">
                 <b>
                   <i>Agamemnon RH</i>
                 </b>
