@@ -1,20 +1,64 @@
-.list {
-  text-align: left;
-  max-width: 750px;
+.add-funcionario-container {
+  max-width: 450px;
+  max-height: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container-add {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  text-align: center;
+  color: green;
+}
+
+table, tbody, thead {
+  align-items: center;
+}
+
+.table-container {
   margin: auto;
+  max-width: 700px;
+  width: 100%;
 }
 
-.submit-form {
-  max-width: 400px;
-  margin: auto;
+.centralized {
+  text-align: center;
 }
 
-.edit-form {
-  max-width: 300px;
-  margin: auto;
+.centralized-button {
+  display: flex;
+  justify-content: center;
 }
 
-button {
-  margin: 0 7px;
+th {
+  text-align: center;
 }
-
