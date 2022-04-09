@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import FuncionarioDataService from "../services/funcionarioDataService";
 
+function mascara_cpf() {
+  var cpf = document.getElementById("cpf");
+  if (cpf.value.length === 3 || cpf.value.length === 7) {
+    cpf.value += ".";
+  } else if (cpf.value.length === 11) {
+    cpf.value += "-";
+  }
+}
+
 export default class AddFuncionario extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +48,8 @@ export default class AddFuncionario extends Component {
     });
   }
 
-  saveFuncionario() {
+  saveFuncionario(event) {
+    event.preventDefault();
     var data = {
       nome: this.state.nome,
       cpf: this.state.cpf,
@@ -62,19 +72,22 @@ export default class AddFuncionario extends Component {
 
   render() {
     return (
-      <div className="submit-form">
+      <form onSubmit={this.saveFuncionario} className="add-funcionario-container">
         {this.state.enviado ? (
-          <div>
-            <h4>O funcionário foi salvo com sucesso!</h4>
-            <button className="btn btn-success" onClick={this.newFuncionario}>
-              Adicionar novo funcionário
-            </button>
+          <div className="data-container">
+            <h4 className="success-message">Funcionário salvo com sucesso!</h4>
+            <div className="button-container">
+              <button className="btn btn-primary" onClick={this.newFuncionario}>
+                Adicionar novo funcionário
+              </button>
+            </div>
           </div>
         ) : (
-          <div>
-            <div className="form-group">
+          <div className="data-container">
+            <h3 className="title-container">Adicionar funcionário</h3>
+            <div className="input-container">
               <label htmlFor="nome">
-                <strong>Nome</strong>
+                <b>Nome</b>
               </label>
               <input
                 type="text"
@@ -84,12 +97,13 @@ export default class AddFuncionario extends Component {
                 value={this.state.nome}
                 onChange={this.onChangeNome}
                 name="nome"
+                autoComplete="off"
               />
             </div>
 
-            <div className="form-group">
+            <div className="input-container">
               <label htmlFor="cpf">
-                <strong>CPF</strong>
+                <b>CPF</b>
               </label>
               <input
                 type="text"
@@ -99,15 +113,20 @@ export default class AddFuncionario extends Component {
                 value={this.state.cpf}
                 onChange={this.onChangeCpf}
                 name="cpf"
+                maxLength={14}
+                onKeyUp={mascara_cpf}
+                autoComplete="off"
               />
             </div>
-            <p></p>
-            <button onClick={this.saveFuncionario} className="btn btn-success">
-              Salvar
-            </button>
+
+            <div className="button-container-add">
+              <button className="btn btn-primary" type="submit">
+                Adicionar
+              </button>
+            </div>
           </div>
         )}
-      </div>
+      </form>
     );
   }
 }
