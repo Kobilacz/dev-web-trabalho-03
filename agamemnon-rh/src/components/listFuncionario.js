@@ -85,7 +85,7 @@ export default class ListFuncionario extends Component {
                     <td className="centralized">
                       {
                         <button
-                          className="btn btn-primary"
+                          className="btn btn-danger"
                           onClick={() => {
                             this.deleteFuncionario(funcionario.id);
                           }}
@@ -99,7 +99,7 @@ export default class ListFuncionario extends Component {
               </tbody>
             </table>
             <div className="centralized-button">
-              <button className="btn btn-primary" onClick={this.removeAll}>
+              <button className="btn btn-danger" onClick={this.removeAll}>
                 Excluir todos os funcionários
               </button>
             </div>
