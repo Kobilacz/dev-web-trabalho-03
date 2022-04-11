@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import FuncionarioDataService from "../services/funcionarioDataService";
-import { Link } from "react-router-dom";
 
 export default class ListFuncionario extends Component {
   constructor(props) {
