@@ -1,4 +1,6 @@
-# Trabalho WEB 3 - React
+## Desenvolvimento Web - Trabalho 03: React
+
+### **Alunos**: Eliézer da Silva Vaz e Luiz Gustavo Kobilacz
 
 ## Descrição do Projeto
 <p>Terceiro trabalho da disciplina de Desenvolvimento Web utilizando Spring boot, React e Javascript para a implementação de uma API REST para um sistema de RH de uma empresa fictícia.</p>
@@ -48,9 +50,4 @@ Métodos da API:
   - Método **DELETE**: exclui todos os funcionários.
 * /api/funcionarios/{id}
   - Método **DELETE**: exclui um funcionário pelo **id**.
-</p>
-
-### Autores
-<p>Eliézer da Silva Vaz<br>
-Luiz Gustavo Kobilacz
 </p>
