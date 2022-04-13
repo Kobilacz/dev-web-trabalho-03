@@ -23,7 +23,7 @@
 3) Acessar a pasta trabalho-03 (que contém o back end) em um terminal de comando
 4) Rodar o comando mvn spring-boot:run para executar o back end
 5) Acessar a pasta agamemnon-rh (que contém o front end) em outro terminal
-6) Baixar dependencias do Node JS com o comando npm -i no terminal
+6) Baixar as dependencias do Node JS com o comando npm -i no terminal
 7) Rodar o comando npm start para iniciar o front end da aplicação
 8) Utilizar o sistema na guia do navegador padrão que será aberta ou acessar através do link: http://localhost:3000/
 
