@@ -34,7 +34,7 @@
 <p>
 Páginas do sistema:
   
-* Listagem de Funcionários: http://localhost:3000/ -> Tela aberta quando o front end é iniciado ou ao clicar em "Agamemnon RH" de uma das outras páginas. Lista os funcionários cadastrados permitindo a visualização de seus dados. Também permite que funcionários sejam excluídos através do botão excluir na tabela apresentada ou que todos os funcionários cadastrados sejam excluídos ao clicar no botão excluir todos os funcionários no final da tabela. Caso nenhum funcionário esteja cadastrado no banco a mensgagem "Nenhum Funcionário Cadastrado!" é exibida;<br><br>
+* Listagem de Funcionários: http://localhost:3000/ -> Tela aberta quando o front end é iniciado ou ao clicar em "Agamemnon RH" de uma das outras páginas. Lista os funcionários cadastrados permitindo a visualização de seus dados. Na tabela apresentada também é permitido que funcionários sejam excluídos individualmente através do botão excluir ou que todos os funcionários cadastrados sejam excluídos ao clicar no botão excluir todos os funcionários no final da tabela. Caso nenhum funcionário esteja cadastrado no banco a mensgagem "Nenhum Funcionário Cadastrado!" é exibida;<br><br>
 * Listagem de Funcionários: http://localhost:3000/list -> É aberta ao clicar no botão "Listar todos os funcionários" em uma das outras páginas. Seu funcionamento é identico a página descrita acima;<br><br>
 * Inclusão de Funcionário: http://localhost:3000/add -> Abre um formulário para a inclusão de um novo funcionário, contendo os campos para a inclusão de seu nome e CPF. Ao clicar no botão "Adicionar" os dados preenchidos são salvos no banco de dados como um novo funcionário;<br> <br>
 </p>
