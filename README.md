@@ -1,4 +1,4 @@
-## Desenvolvimento Web - Trabalho 03: React
+## Desenvolvimento Web - Trabalho 03 - React
 
 ### **Alunos**: Eliézer da Silva Vaz e Luiz Gustavo Kobilacz
 
